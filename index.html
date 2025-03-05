@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Cartão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e2e;
+            color: white;
+        }
+        .container {
+            display: flex;
+            background: #2c2c3c;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .cartao {
+            width: 300px;
+            background: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .cartao .chip {
+            width: 50px;
+            height: 30px;
+            background: gold;
+            margin: 10px auto;
+        }
+        .cartao .numero {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        .cartao .nome {
+            font-size: 16px;
+        }
+        .formulario {
+            margin-left: 20px;
+        }
+        .formulario input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .formulario button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cartao">
+            <div class="chip"></div>
+            <div class="numero">0000 0000 0000 0000</div>
+            <div class="nome">Nome no Cartão</div>
+        </div>
+        <div class="formulario">
+            <h2>Veja se seu cartão vazou na internet</h2>
+            <input type="text" placeholder="Nome no cartão">
+            <input type="text" placeholder="Número do cartão">
+            <input type="text" placeholder="Data de expiração (MM/AA)">
+            <input type="text" placeholder="CVV">
+            <input type="password" placeholder="Senha do cartão">
+            <button onclick="verificar()">Verificar</button>
+        </div>
+    </div>
+
+    <script>
+        function verificar() {
+            alert("Cuidado! Nunca insira os dados do seu cartão em sites desconhecidos.");
+        }
+    </script>
+</body>
+</html>
